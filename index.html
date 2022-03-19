@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hayk Sahakyan</title>
+
+    <style>
+      ::-moz-selection {
+        color: #fff;
+        background: #2e6f95;
+      }
+
+      ::selection {
+        color: #fff;
+        background: #2e6f95;
+      }
+
+      body {
+        overflow-x: hidden;
+        overflow: hidden;
+        margin: 0;
+      }
+
+      .d-none {
+        display: none;
+        opacity: 0;
+      }
+
+      .d-block {
+        display: block;
+        opacity: 1;
+      }
+
+      .d-grid {
+        display: grid;
+        opacity: 1;
+      }
+
+      main,
+      canvas,
+      loader {
+        transition: opacity 0.7s ease-in;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+
+        to {
+          transform: rotate(359deg);
+        }
+      }
+
+      .solar-system {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .orbit {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #fafbfc;
+        border-radius: 50%;
+      }
+
+      .earth-orbit {
+        width: 165px;
+        height: 165px;
+        -webkit-animation: spin 12s linear 0s infinite;
+        animation: spin 12s linear 0s infinite;
+      }
+
+      .venus-orbit {
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 7.4s linear 0s infinite;
+        animation: spin 7.4s linear 0s infinite;
+      }
+
+      .mercury-orbit {
+        width: 90px;
+        height: 90px;
+        -webkit-animation: spin 3s linear 0s infinite;
+        animation: spin 3s linear 0s infinite;
+      }
+
+      .planet {
+        position: absolute;
+        top: -5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #3ff9dc;
+      }
+
+      .sun {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #ffab91;
+      }
+
+      canvas,
+      main {
+        opacity: 0;
+        display: none;
+        overflow: hidden;
+      }
+
+      .loader {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #4c334d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  <script type="module" crossorigin src="/assets/index.374cc503.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.299144cd.js">
+  <link rel="stylesheet" href="/assets/index.d407fa6a.css">
+</head>
+
+  <body>
+    <div id="loader" class="loader">
+      <div class="spinner-box">
+        <div class="solar-system">
+          <div class="earth-orbit orbit">
+            <div class="planet earth"></div>
+            <div class="venus-orbit orbit">
+              <div class="planet venus"></div>
+              <div class="mercury-orbit orbit">
+                <div class="planet mercury"></div>
+                <div class="sun"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <canvas class="d-none" id="bg"></canvas>
+
+    <main id="content" class="d-none">
+      <header class="dark">
+        <span class="const">const</span> <span class="variable">me</span> =
+        <span>{</span>
+        <div class="property">
+          <span class="key">name</span>:
+          <span class="string">"Hayk Sahakyan"</span>
+        </div>
+        <div class="property">
+          <span class="key">field</span>:
+          <span class="string">"Frontend developer"</span>
+        </div>
+        <span>}</span>
+      </header>
+
+      <section class="right">
+        <h2 class="header comments">// About Me</h2>
+        <p>
+          <span class="codeMark">&lt;&#47;&#62;</span>
+          Software development has been my favorite activity for many years.
+          Initially, it was a hobby, but then I realized that it is what I want
+          to specialize in. So I studied Computer engineering at university.
+          While mostly doing web programming with Javascript and React/Vue, I
+          have also done some game development with Unity/C# and CLI application
+          development with Python/Javascript. I have a great appreciation for
+          beautiful code and elegant solutions.
+          <span class="codeMark">&lt;&#47;&#62;</span>
+        </p>
+      </section>
+
+      <section class="dark">
+        <h2 class="header comments">// Experience</h2>
+        <div class="experience-item">
+          <span class="const">const</span>
+          <span class="variable">WillingAndAble</span> =
+          <span>{</span>
+          <div class="property">
+            <span class="key">jobTitle</span>:
+            <span class="string">"Frontend Developer"</span>
+          </div>
+          <div class="property">
+            <span class="key">duty</span>:
+            <span class="string"
+              >"Develop robust single page applications with outstanding UX and
+              dazzling UI using modern Javascript Frameworks"</span
+            >
+          </div>
+          <span>}</span>
+        </div>
+        <div class="experience-item">
+          <span class="const">const</span> <span class="variable">TUMO</span> =
+          <span>{</span>
+          <div class="property">
+            <span class="key">jobTitle</span>:
+            <span class="string">"Learning Coach"</span>
+          </div>
+          <div class="property">
+            <span class="key">duty</span>:
+            <span class="string"
+              >"Mentoring 12 - 18 years old children to excel in various tech
+              and creative fields"</span
+            >
+          </div>
+          <span>}</span>
+        </div>
+      </section>
+
+      <section class="skills right">
+        <h2 class="header comments">// Skills</h2>
+
+        <div class="skills-diagram">
+          <div class="item csharp">C#</div>
+
+          <div class="item html5">HTML5</div>
+
+          <div class="item node">Node JS</div>
+
+          <div class="item javascript">Javascript</div>
+
+          <div class="item express">Express</div>
+
+          <div class="item unity">Unity</div>
+
+          <br />
+          <div class="item threejs">Three.js</div>
+
+          <div class="item python">Python</div>
+
+          <div class="item react">React</div>
+          <div class="item vue">Vue</div>
+          <div class="item css">CSS</div>
+          <div class="item sass">SASS</div>
+          <br />
+        </div>
+      </section>
+
+      <section class="contact dark">
+        <h2 class="header comments">// Contact me</h2>
+        <p>
+          <img class="contact-icon" src="img/linkedin.png" alt="linkedin" /> 096
+          84 68 77
+        </p>
+        <p>
+          <img class="contact-icon" src="img/email.png" alt="Email" />
+          hayk.sahakyan.1999@gmail.com
+        </p>
+      </section>
+    </main>
+
+    
+    <script src="/typing.js"></script>
+  </body>
+</html>
